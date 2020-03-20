@@ -22,3 +22,4 @@ rm -rf yujin_ocs
 
 sudo apt-get install ros-melodic-kobuki-* -y
 sudo apt-get install ros-melodic-ecl-streams -y
+sudo apt-get install ros-melodic-joy -y

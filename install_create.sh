@@ -23,3 +23,5 @@ rm -rf yujin_ocs
 sudo apt-get install ros-melodic-kobuki-* -y
 sudo apt-get install ros-melodic-ecl-streams -y
 sudo apt-get install ros-melodic-joy -y
+sudo apt install ros-melodic-laptop-battery-monitor -y
+sudo apt install ros-melodic-robot-pose-ekf -y

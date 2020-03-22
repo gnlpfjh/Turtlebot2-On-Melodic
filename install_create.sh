@@ -9,6 +9,7 @@ git clone https://github.com/turtlebot/turtlebot_msgs.git
 git clone https://github.com/turtlebot/turtlebot_apps.git
 git clone https://github.com/turtlebot/turtlebot_simulator
 git clone https://github.com/turtlebot/turtlebot_create.git
+git clone https://github.com/turtlebot/turtlebot_interactions.git
 
 git clone https://github.com/yujinrobot/yujin_ocs.git
 mv yujin_ocs/yocs_cmd_vel_mux yujin_ocs/yocs_controllers .

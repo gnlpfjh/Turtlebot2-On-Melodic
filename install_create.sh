@@ -10,6 +10,20 @@ git clone https://github.com/turtlebot/turtlebot_apps.git
 git clone https://github.com/turtlebot/turtlebot_simulator
 git clone https://github.com/turtlebot/turtlebot_create.git
 git clone https://github.com/turtlebot/turtlebot_interactions.git
+git clone https://github.com/turtlebot/turtlebot_create_desktop.git
+git clone https://github.com/turtlebot/turtlebot_rcommander.git
+
+git clone https://github.com/toeklk/orocos-bayesian-filtering.git
+cd orocos-bayesian-filtering/orocos_bfl/
+./configure
+make
+sudo make install
+cd ../
+make
+cd ../
+
+git clone https://github.com/udacity/robot_pose_ekf
+git clone https://github.com/ros-perception/depthimage_to_laserscan.git
 
 git clone https://github.com/yujinrobot/yujin_ocs.git
 mv yujin_ocs/yocs_cmd_vel_mux yujin_ocs/yocs_controllers .
@@ -34,7 +48,7 @@ sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
 sudo apt-get install openni2-utils -y && sudo make install-openni2
 export LIBFREENECT2_PIPELINE=cl
 
-sudo apt-get install ros-melodic-kobuki-ftdi -y
+sudo apt-get install ros-melodic-kobuki-* -y
 sudo apt-get install ros-melodic-ecl-streams -y
 sudo apt-get install ros-melodic-joy -y
 sudo apt install ros-melodic-laptop-battery-monitor -y

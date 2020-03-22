@@ -21,12 +21,17 @@ sudo apt-get install build-essential cmake pkg-config -y
 sudo apt-get install libusb-1.0-0-dev -y
 sudo apt-get install libturbojpeg0-dev -y
 sudo apt-get install libglfw3-dev -y
+sudo apt-get install libopenni2-dev -y
+
 sudo add-apt-repository ppa:floe/beignet && sudo apt-get update
 sudo apt-get install beignet beignet-dev opencl-headers -y
 mkdir build && cd build
 cmake .. -DENABLE_CXX11=ON -DCMAKE_INSTALL_PREFIX=$HOME/freenect2
 make
 make install
+sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
+sudo apt-get install openni2-utils -y && sudo make install-openni2
+export LIBFREENECT2_PIPELINE=cl
 
 sudo apt-get install ros-melodic-kobuki-ftdi -y
 sudo apt-get install ros-melodic-ecl-streams -y

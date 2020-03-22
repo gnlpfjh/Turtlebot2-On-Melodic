@@ -38,6 +38,7 @@ sudo apt-get install ros-melodic-ecl-streams -y
 sudo apt-get install ros-melodic-joy -y
 sudo apt install ros-melodic-laptop-battery-monitor -y
 sudo apt install ros-melodic-robot-pose-ekf -y
+sudo apt install ros-melodic-opnni2-* -y
 sudo apt install libeigen3-dev -y
 sudo apt install libpcl-dev -y
 

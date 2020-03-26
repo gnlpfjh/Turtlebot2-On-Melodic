@@ -57,7 +57,7 @@ sudo apt install ros-melodic-opnni2-* -y
 sudo apt install libeigen3-dev -y
 sudo apt install libpcl-dev -y
 
-cd ~/catkin_ws
+cd ~/catkin_ws/src/
 git clone https://github.com/code-iai/iai_kinect2.git
 cd iai_kinect2
 rosdep install -r --from-paths .

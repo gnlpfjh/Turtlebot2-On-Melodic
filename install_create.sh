@@ -8,7 +8,7 @@ git clone https://github.com/gnlpfjh/turtlebot.git
 git clone https://github.com/turtlebot/turtlebot_msgs.git
 git clone https://github.com/turtlebot/turtlebot_apps.git
 git clone https://github.com/turtlebot/turtlebot_simulator
-git clone https://github.com/turtlebot/turtlebot_create.git
+git clone https://github.com/gnlpfjh/turtlebot_create.git
 git clone https://github.com/turtlebot/turtlebot_interactions.git
 git clone https://github.com/turtlebot/turtlebot_create_desktop.git
 git clone https://github.com/turtlebot/turtlebot_rcommander.git
@@ -62,4 +62,5 @@ git clone https://github.com/code-iai/iai_kinect2.git
 cd iai_kinect2
 rosdep install -r --from-paths .
 cd ~/catkin_ws
+rosdep install --from-paths src --ignore-src -r -y
 catkin_make -DCMAKE_BUILD_TYPE="Release"
